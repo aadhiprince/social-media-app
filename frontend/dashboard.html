@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="css/dashboard.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Dashboard</h1>
+    <button class="logout-btn">Logout</button>
+
+    <form id="postForm" enctype="multipart/form-data">
+      <textarea name="content" placeholder="Write your message..." required></textarea><br />
+    
+      <!-- ✅ Add this line for image upload -->
+      <input type="file" name="image" accept="image/*"><br />
+    
+      <label>
+        <input type="checkbox" name="is_public" checked /> Make Public
+      </label><br />
+    
+      <button type="submit">Post</button>
+    </form>
+    
+
+    <h2>Your Feed</h2>
+    <div id="postsContainer"></div>
+
+    <a class="link-btn" href="change-password.html">Change Password</a>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
