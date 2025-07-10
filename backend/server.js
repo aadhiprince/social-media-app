@@ -9,7 +9,7 @@ const fs = require("fs");
 
 const app = express();
 const PORT = 3000;
-const JWT_SECRET = "Aadhithyan"; // change this in production
+const JWT_SECRET = "AadhithyanSaravanan";
 
 // Serve uploaded images publicly from /uploads
 app.use('/uploads', express.static(path.join(__dirname, 'public', 'uploads')));
