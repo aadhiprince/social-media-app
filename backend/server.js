@@ -150,7 +150,7 @@ if (isSameAsCurrent) {
   });
 });
 
-
+//// New Feature Added 
 
 // Create post (with image)
 app.post("/posts/create", requireLogin, upload.single("image"), (req, res) => {
